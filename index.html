@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day Kunjaaaa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Privacy Protection: Login Screen -->
+    <div id="login-screen">
+        <div class="login-box">
+            <h2>🔒 Private Mailbox</h2>
+            <p>Enter the secret code to open:</p>
+            <input type="password" id="secret-code" placeholder="Enter code (143)">
+            <button onclick="checkPass()">Enter</button>
+            <p id="error-msg" style="color:red; display:none;">Wrong code! Try '143'</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <div class="container">
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+            <div class="envelope">
+                <ul class="hearts-decor">
+                    <li class="heart-shape"></li>
+                    <li class="heart-shape"></li>
+                    <li class="heart-shape"></li>
+                </ul>
+                <div class="back"></div>
+                <div class="letter">
+                    <div class="text">
+                        <h2 class="caption">Love you always 💘</h2>
+                        <h1 class="main-text">Kuunnjjjaaa&lt;3,<br>will you be my Valentine?</h1>
+                        <div class="icons">
+                            <span class="heart-icon">💗</span>
+                            <span class="heart-icon">💕</span>
+                        </div>
+                        <p class="subtitle">You’re my favorite place to go when my mind searches for peace 💕</p>
+                        <div class="buttons">
+                            <button class="yes-btn" onclick="handleYesClick(event)">YES</button>
+                            <button class="no-btn" onmouseover="moveNoButton(this)"
+                                onclick="moveNoButton(this)">NO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-pocket"></div>
+                <!-- Flap (top part that opens) -->
+                <div class="flap"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

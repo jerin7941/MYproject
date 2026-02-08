@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Gallery</title>
+    <link rel="stylesheet" href="love-style.css">
+</head>
+
+<body>
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <div class="love-container">
+        <!-- Background hearts -->
+        <div class="background-hearts"></div>
+
+        <!-- Zoom Modal -->
+        <div id="zoomModal" class="zoom-modal" onclick="closeZoom()">
+            <div class="zoom-content" onclick="event.stopPropagation()">
+                <button class="close-zoom" onclick="closeZoom()">&times;</button>
+                <div class="love-frame">
+                    <img id="zoomImage" src="" alt="Zoomed Love Photo">
+                    <div class="corner-heart top-left">💖</div>
+                    <div class="corner-heart top-right">💝</div>
+                    <div class="corner-heart bottom-left">💝</div>
+                    <div class="corner-heart bottom-right">💖</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scattered Gallery -->
+        <div class="scattered-gallery">
+            <div class="photo-card" onclick="openZoom(this)">
+                <div class="tape-section"></div>
+                <img src="images/IMG-20260118-WA0095.jpg" alt="Love Photo">
+                <div class="caption">My Heart ❤️</div>
+            </div>
+
+            <div class="photo-card" onclick="openZoom(this)">
+                <div class="tape-section"></div>
+                <img src="images/IMG_20250815_000240.jpg" alt="Love Photo">
+                <div class="caption">Sweetest Moment 💕</div>
+            </div>
+
+            <div class="photo-card" onclick="openZoom(this)">
+                <div class="tape-section"></div>
+                <img src="images/IMG_20251002_165000.jpg" alt="Love Photo">
+                <div class="caption">Forever & Always 🌹</div>
+            </div>
+
+            <div class="photo-card" onclick="openZoom(this)">
+                <div class="tape-section"></div>
+                <img src="images/IMG_20251012_170122_028.jpg" alt="Love Photo">
+                <div class="caption">Us 💑</div>
+            </div>
+
+            <div class="photo-card" onclick="openZoom(this)">
+                <div class="tape-section"></div>
+                <img src="images/20250905_202226.jpg" alt="Love Photo">
+                <div class="caption">Smile 😊</div>
+            </div>
+
+            <div class="photo-card" onclick="openZoom(this)">
+                <div class="tape-section"></div>
+                <img src="images/IMG_20251228_014112.jpg" alt="Love Photo">
+                <div class="caption">Love You 💖</div>
+            </div>
+        </div>
+
+        <!-- Back button -->
+        <a href="index.html" class="back-btn">← Back</a>
+
+        <!-- Contact Link -->
+        <a href="https://wa.me/?text=I%20love%20it!%20%F0%9F%92%96" class="contact-btn" target="_blank">Message Me
+            💌</a>
+    </div>
+
+    <script src="love-script.js"></script>
+</body>
+
+</html>
